@@ -1,0 +1,825 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf );
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------Start header section --------------------------------  */
+.navbar-logo {
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+body:has(#all:target) .all-link::before,
+body:has(#about:target) .About-link::before,
+body:has(#Services:target) .Services-link::before,
+body:has(#portfolio:target) .works-link::before,
+body:has(#testmonials:target) .clients-link::before,
+body:has(#our-team:target) .team-link::before,
+body:has(#contact:target) .contact-link::before {
+    content: "";
+    background-color: #343434;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    margin: auto;
+    transition: all 406ms;
+}
+
+body:has(#all:target) .all-link,
+body:has(#about:target) .About-link,
+body:has(#GaServicesllery:target) .Services-link,
+body:has(#portfolio:target) .works-link,
+body:has(#testmonials:target) .clients-link,
+body:has(#our-team:target) .team-link,
+body:has(#contact:target) .contact-link {
+    color: #343434;
+}
+
+header {
+    background-image: url(../imgs/bg.jpg);
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+header .header-layar {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+header .header-content h5 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+header .header-content h1 {
+    font-size: 60px;
+    font-weight: 400;
+    width: fit-content;
+}
+
+header .header-content h1 span {
+    font-size: 60px;
+    font-weight: 200;
+
+}
+
+header .header-content h1::after {
+    content: "";
+    animation: typing infinite 10s;
+    text-transform: capitalize;
+}
+
+/* Larry Daniels Developer Designer */
+/* 26     18   16 */
+/*     10   10   10 */
+@keyframes typing {
+    0% {
+        content: "l";
+    }
+
+    1% {
+        content: "la";
+    }
+
+    2% {
+        content: "lar";
+    }
+
+    3% {
+        content: "larr";
+    }
+
+    4% {
+        content: "larry";
+    }
+
+    5% {
+        content: "Larry D";
+    }
+
+    6% {
+        content: "Larry Da";
+    }
+
+    7% {
+        content: "Larry Dan";
+    }
+
+    8% {
+        content: "Larry Dani";
+    }
+
+    9% {
+        content: "Larry Danie";
+    }
+
+    10% {
+        content: "Larry Daniel";
+    }
+
+    11% {
+        content: "Larry Daniels";
+    }
+
+    21% {
+        content: "Larry Daniels";
+    }
+
+    22% {
+        content: "Larry Daniel";
+    }
+
+    23% {
+        content: "Larry Danie";
+    }
+
+    24% {
+        content: "Larry Dani";
+    }
+
+    25% {
+        content: "Larry Dan";
+    }
+
+    25% {
+        content: "Larry Da";
+    }
+
+    27% {
+        content: "Larry Da";
+    }
+
+    28% {
+        content: "Larry D";
+    }
+
+    29% {
+        content: "Larry ";
+    }
+
+    30% {
+        content: "Larry";
+    }
+
+    31% {
+        content: "Larr";
+    }
+
+    32% {
+        content: "Lar";
+    }
+
+    33% {
+        content: "La";
+    }
+
+    34% {
+        content: "L";
+    }
+
+    35% {
+        content: " ";
+    }
+
+    36% {
+        content: "D";
+    }
+
+    37% {
+        content: "De";
+    }
+
+    38% {
+        content: "Dev";
+    }
+
+    39% {
+        content: "Deve";
+    }
+
+    40% {
+        content: "Devel";
+    }
+
+    41% {
+        content: "Develo";
+    }
+
+    42% {
+        content: "Develop";
+    }
+
+    43% {
+        content: "Develope";
+    }
+
+    44% {
+        content: "Developer";
+    }
+
+    54% {
+        content: "Developer";
+    }
+
+    55% {
+        content: "Develope";
+    }
+
+    56% {
+        content: "Develop";
+    }
+
+    57% {
+        content: "Develo";
+    }
+
+    58% {
+        content: "Devel";
+    }
+
+    59% {
+        content: "Deve";
+    }
+
+    60% {
+        content: "Dev";
+    }
+
+    61% {
+        content: "De";
+    }
+
+    62% {
+        content: "D";
+    }
+
+    63% {
+        content: "";
+    }
+
+    63% {
+        content: "D";
+    }
+
+    64% {
+        content: "De";
+    }
+
+    65% {
+        content: "Des";
+    }
+
+    66% {
+        content: "Desi";
+    }
+
+    67% {
+        content: "Desig";
+    }
+
+    68% {
+        content: "Design";
+    }
+
+    69% {
+        content: "Designe";
+    }
+
+    70% {
+        content: "Designer";
+    }
+
+    80% {
+        content: "Designer";
+    }
+
+    81% {
+        content: "Designe";
+    }
+
+    82% {
+        content: "Design";
+    }
+
+    83% {
+        content: "Desig";
+    }
+
+    84% {
+        content: "Desi";
+    }
+
+    85% {
+        content: "Des";
+    }
+
+    86% {
+        content: "De";
+    }
+
+    87% {
+        content: "D";
+    }
+
+    88% {
+        content: "";
+    }
+
+    100% {
+        content: " ";
+    }
+}
+
+
+header .header-content .icon {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+
+}
+
+/* --------------------------------End header section --------------------------------  */
+
+/* --------------------------------Start about section --------------------------------  */
+.about .image {
+    padding-left: 30px;
+    position: relative;
+
+}
+
+.about .image img {}
+
+.about .image::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+
+}
+
+.about-content {}
+
+.about-content h3 {
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+.about-content span {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.about-content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #748182;
+}
+
+.about-content p span {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(116, 129, 130, 1);
+}
+
+.progress-parant {
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    /* width: 100% !important; */
+}
+
+.progress-child {
+    background-color: #1c1c1c;
+}
+
+.progress-child p {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.percentage-95 {
+    width: 95%;
+}
+
+.percentage-80 {
+    width: 80%;
+}
+
+.percentage-90 {
+    width: 90%;
+}
+
+.about-button {}
+
+.about-button .button-hover:hover {
+    background-color: #fff;
+    color: #343434;
+
+}
+
+/* --------------------------------End about section --------------------------------  */
+
+/* --------------------------------Start services section --------------------------------  */
+.services {
+    background-color: #f7f7f7;
+}
+
+.services .services-head h2 {
+    font-family: "Montserrat", 'sans-serif';
+    font-weight: 900;
+    width: fit-content;
+    font-size: 40px;
+}
+
+.services .services-head h2:before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -10px;
+    left: 0;
+}
+
+.services .services-body .items {
+    background-color: #fff;
+}
+
+
+.services .services-body .items .icon {
+    background: #f4f4f4;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+.services .services-body .items:hover .icon {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+.services .services-body .items p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* --------------------------------End services section --------------------------------  */
+
+/* --------------------------------start portofolio section --------------------------------  */
+.portofolio .portofolio-head h3 {
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.portofolio .portofolio-head h3:before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -10px;
+    left: 0;
+}
+
+.portofolio .pills-btn button {
+    transition: all 1s;
+}
+
+.portofolio .pills-btn button.active {
+    background-color: transparent !important;
+    color: #222;
+    position: relative;
+}
+
+.portofolio .pills-btn button.active::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    margin: auto;
+    background-color: #222;
+    bottom: 0px;
+    left: 10%;
+    transition: all 1s;
+}
+
+.portofolio .pills-btn button {
+    font-family: "Poppins", sans-serif;
+    margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.portofolio .projects .project-layer {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .5s;
+}
+
+.portofolio .projects:hover .project-layer {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.portofolio .projects .project-layer h6 {
+    font-size: 12px;
+    font-weight: 700;
+    transition: all .6s;
+
+}
+
+.portofolio .projects:hover .project-layer h6 {
+    transform: translateY(15px);
+    margin-bottom: 15px;
+
+}
+
+
+.portofolio .projects .project-layer-icon .icon {
+    background: #111;
+    color: #eee;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #111;
+
+}
+
+.portofolio .projects .project-layer-icon .icon i {
+    color: #eee;
+
+}
+
+.portofolio .projects .project-layer-icon .icon:hover i {
+    color: #111;
+}
+
+.portofolio .projects .project-layer-icon .icon:hover {
+    background: #eee;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------End portofolio section --------------------------------  */
+
+/* --------------------------------start testmonials section --------------------------------  */
+.testmonials h3 {
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.testmonials h6 {
+    font-weight: 500;
+}
+
+.testmonials h3:before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -10px;
+    left: 0;
+}
+
+.testmonials .testmonials-body .carousel-item-image {
+    width: 90px;
+    height: 90px;
+}
+
+.testmonials .testmonials-body .carousel-indicators-btn .carousel-btn {
+    background-color: #5e5555;
+    width: 10px;
+    height: 10px;
+    text-indent: 0;
+    transition: opacity 0.2s ease;
+}
+
+.testmonials .testmonials-body .carousel-indicators-btn .carousel-btn:hover {
+    background-color: #5e5555;
+    opacity: 1;
+}
+
+/* --------------------------------End testmonials section --------------------------------  */
+
+
+/* --------------------------------start clients section --------------------------------  */
+.clients h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+.clients p {
+    font-size: 15px;
+    font-weight: 600;
+    column-rule-color: #748182;
+}
+
+/* --------------------------------End clients section --------------------------------  */
+
+/* --------------------------------start our team section --------------------------------  */
+.our-team {}
+
+.our-team h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+}
+
+.our-team h3::before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -10px;
+    left: 0;
+}
+
+.our-team .items {
+    background-color: rgba(52, 52, 52, .8);
+}
+
+.our-team .items .img img {
+    transition: transform 1s;
+}
+
+.our-team .items .img-layer {
+    background-color: rgba(255, 255, 255, 0.95);
+    inset: 5px;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    transition: all 1s;
+}
+
+.our-team .items:hover .img-layer {
+    opacity: 1 !important;
+    transform: rotateY(360deg) scale(1, 1);
+}
+
+.our-team .items .img-layer .icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.our-team .items .img-layer .icon:hover {
+    border: 1px solid black;
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.our-team .items:hover .img img {
+    transform: scale(1.2, 1.2);
+}
+
+.our-team h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.our-team h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* --------------------------------End our team section --------------------------------  */
+
+/* --------------------------------start contact-us section --------------------------------  */
+.contact-us {}
+
+.contact-us h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+
+}
+
+.contact-us h3::before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: -10px;
+    left: 0;
+}
+
+.contact-us .icon {
+    font-size: 25px;
+    font-weight: 400;
+    width: fit-content;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #EEEEEE;
+    transition: all .5s;
+}
+
+.contact-us .details-item:hover .icon {
+    background-color: black;
+    color: #EEEEEE;
+}
+
+.contact-us h6 {
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-form .bg-filds {
+    background-color: #F4F4F4;
+    outline: none !important;
+}
+
+
+/* --------------------------------End footer section --------------------------------  */
+
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;
+
+}
+
+/* --------------------------------End footer section --------------------------------  */
